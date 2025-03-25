@@ -1,0 +1,127 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-size: cover;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero {
+    font-family: "Zen Dots", sans-serif;
+    background: url("images/IMG_8847.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Adjust the background scaling for larger screens */
+@media (min-width: 1200px) {
+    .hero {
+        background-size: 58%;
+        background-position: center center;
+    }
+    h1 {
+        font-size: 79px;
+    }
+}
+
+.content {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+h1 {
+    margin: 0;
+    color: #f8f9fa;
+    font-family: "Zen Dots", sans-serif;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #f8f9fa;
+}
+
+.listen-btn {
+    background: #f8f9fa;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.titleHeader {
+    position: relative;
+    background: url("images/cropped-banner-png.png") no-repeat center center/cover;
+    width: 100vw;
+    height: 20vh;
+    background-position: center 45%;
+}
+
+.typedTitle {
+    z-index: 10; /* to ensure the typing animation appears over the image in the div*/
+    position: absolute;
+    top: 5vh;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-family: "Zen Dots", sans-serif;
+    overflow: hidden;
+    border-right: 4px solid white; /*blink cursor*/
+    padding-right: 4px;
+    white-space: nowrap;
+    animation:
+        typing 2s steps(40) forwards,
+        blink 0.75s step-end infinite;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
