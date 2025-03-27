@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>The Mydas Touch ~ Portfolio</title>
+        <link rel="icon" href="images/movie.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet" />
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    </head>
+
+    <body>
+        <!--OPENING PAGE WITH BUTTON FUCTION-->
+
+        <div id="welcome-page">
+            <!--INTRO SOUND-->
+            <audio id="musicplayer" controls autoplay>
+                <source src="music/hal-9000-intro.wav" type="audio/wav" />
+            </audio>
+
+            <audio id="buttonplay" controls autoplay>
+                <source src="music/anotha1.mp3" type="audio/mp3" />
+            </audio>
+
+            <img src="images/title%20card.png" alt="title card" class="title-card" />
+            <button class="start-button" onclick="buttonClicked()">
+                <img src="images/start-button.png" alt="Button Image" class="button-image" />
+            </button>
+        </div>
+
+        <!--ACTUAL PORTFOLIO PAGE-->
+
+        <div id="main-content">
+            <audio controls autoplay>
+                <source src="music/Otesla%20-%20Gardens.mp3" type="audio/mp3" />
+            </audio>
+            <audio id="linkplay" controls autoplay>
+                <source src="music/anotha1.mp3" type="audio/mp3" />
+            </audio>
+
+            <div class="header">
+                <img src="images/dedsec-main.png" alt="dedsec logo" class="header-image" />
+                <h1 class="title" style="color: #366db6">The Mydas Touch</h1>
+                <img src="images/dedsec-main.png" alt="dedsec logo" class="header-image" />
+            </div>
+
+            <h2 class="subtitle" style="color: #366db6">Portfolio for CS299/PHIL222 by Karrington Wilson</h2>
+
+            <main>
+                <div class="image-container">
+                    <a
+                        href="https://cs.wellesley.edu/~kw103/cs299-portfolio/project1/"
+                        class="page-link"
+                        onclick="linkPlay()">
+                        <img src="images/code-terminal.png" />
+                    </a>
+                    <h2 style="color: #366db6">Project 1</h2>
+                </div>
+
+                <div class="image-container">
+                    <a
+                        href="https://cs.wellesley.edu/~kw103/cs299-portfolio/project2/testing.html"
+                        class="page-link"
+                        onclick="linkPlay()"
+                        ><img src="images/code-terminal.png"
+                    /></a>
+
+                    <h2 style="color: #366db6">Project 2</h2>
+                </div>
+
+                <div class="image-container">
+                    <a
+                        href="https://cs.wellesley.edu/~kw103/cs299-portfolio/project3/Project%203/windows-95-ui-kit%20%28copy%201%29/index.html"
+                        class="page-link"
+                        onclick="linkPlay()"
+                        ><img src="images/code-terminal.png"
+                    /></a>
+                    <h2 style="color: #366db6">Project 3</h2>
+                </div>
+
+                <div class="image-container">
+                    <a
+                        href="https://cs.wellesley.edu/~kw103/cs299-portfolio/project4/final.html"
+                        class="page-link"
+                        onclick="linkPlay()"
+                        ><img src="images/code-terminal.png"
+                    /></a>
+
+                    <h2 style="color: #366db6">Project 4</h2>
+                </div>
+
+                <div class="image-container">
+                    <img src="images/code-terminal.png" />
+                    <h2 style="color: #366db6">Project 5</h2>
+                </div>
+            </main>
+        </div>
+
+        <!--  <p>Here is a list of my projects this semester:</p>
+        <ul>
+            <li>Project 1: Technomoral Values</li>
+            <li>Project 2: Your Tech Use</li>
+        </ul>-->
+    </body>
+</html>
