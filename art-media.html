@@ -26,28 +26,240 @@
             <div class="typedTitle"></div>
         </div>
 
+        <!--Lens Based Media-->
         <h1 style="text-align-last: center">LENS BASED MEDIA</h1>
         <div class="gallery">
             <div class="project-item" data-project="project1">
-                <img src="images/project1-thumbnail.jpg" alt="Project 1" class="project-thumbnail" />
-                <h3>Project 1</h3>
+                <img
+                    src="images/horror-short-thumbnail.png"
+                    alt="Project 1"
+                    class="project-thumbnail"
+                    onclick="openModal('project1')" />
+                <h3>Horror Short by Karrington Wilson</h3>
             </div>
             <div class="project-item" data-project="project2">
-                <img src="images/project2-thumbnail.jpg" alt="Project 2" class="project-thumbnail" />
-                <h3>Project 2</h3>
+                <img
+                    src="images/appropriation-thumbnail.png"
+                    alt="Project 2"
+                    class="project-thumbnail"
+                    onclick="openModal('project2')" />
+                <h3>Appropriation Short by Karrington Wilson</h3>
             </div>
         </div>
+        <!--Playable Media-->
         <h1 style="text-align-last: center">PLAYABLE MEDIA</h1>
         <div class="gallery">
-            <div class="project-item" data-project="project1">
-                <img src="images/project1-thumbnail.jpg" alt="Project 1" class="project-thumbnail" />
-                <h3>Project 1</h3>
-            </div>
-            <div class="project-item" data-project="project2">
-                <img src="images/project2-thumbnail.jpg" alt="Project 2" class="project-thumbnail" />
-                <h3>Project 2</h3>
+            <div class="project-item" data-project="project">
+                <img
+                    src="images/black-film-game-landing-thumbnail.png"
+                    alt="Project 3"
+                    class="project-thumbnail"
+                    onclick="openModal('project3')" />
+                <h3>Black Film Archive Rhythm Game <br /><br />(Work in Progress)</h3>
             </div>
         </div>
-        <script src="script.js"></script>
+
+        <!-- Popups for Each Project. Will be hidden until related project is clicked on -->
+        <div class="modal-overlay" id="project1">
+            <div class="modal-content">
+                <h2>Horror Short</h2>
+                <img src="images/horror-short-thumbnail.png" alt="Project 1" class="project-thumbnail" />
+                <!--video link to drive-->
+                <embed
+                    type="video/mp4"
+                    src="https://drive.google.com/file/d/1ZX_lf6rRugEHLXgJ2C8y0AO3QKf46hzg/view?usp=sharing"
+                    title="horror-short"
+                    width="400"
+                    height="300" />
+                <p>
+                    <b>What the project is:</b><br /><br />
+                    Both films you will see are part of a collection of experimental short films and video-based works
+                    created in Intermediate Video Production, a Cinema and Media Studies (CAMS) course. These projects
+                    feature themes of repetition, rephotography, and storytelling through lens-based media.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>How I came up with the idea: </b> <br /><br />This horror short was inspired by structuralist
+                    film, which is a film/video in which the presence of the camera and the making of the film become a
+                    major character in its narrative. I shot this short video using my dorm environment and
+                    neighborhood, as well as editing in sounds to give the film a creepy feeling while remaining
+                    structuralist at its core.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>Who I worked with:</b> <br /><br />
+                    Primarily individual projects, but I received feedback from my professor, Claudia Joscowicz and my
+                    peers.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>What was my role:</b> <br /><br />
+                    Director, editor, lead actor, and conceptual designer. I handled cinematography, post-production,
+                    and narrative structuring.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>What I learned: </b> <br /><br />How to convey meaning through visual storytelling, the impact of
+                    editing techniques on perception, and how to refine my artistic voice through iteration.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>What challenged me:</b> <br /><br />
+                    Balancing conceptual depth with accessibility for viewers. Some ideas felt too abstract, so I worked
+                    on making them more engaging without losing artistic intent. I also want to edit these further in
+                    the future to make the narrative tighter and possibly expand on them further.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>How it relates to my major:</b> <br /><br />
+                    It bridges my Media Arts and Sciences background, integrating film theory with interactive and
+                    immersive storytelling techniques.
+                </p>
+                <p>--------------------</p>
+                <button class="close-btn" onclick="closeModal('project1')">Close</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="project2">
+            <div class="modal-content">
+                <h2>Appropriation Short</h2>
+                <img src="images/appropriation-thumbnail.png" alt="Project 2" class="project-thumbnail" />
+                <!--video link to drive-->
+                <embed
+                    type="video/mp4"
+                    src="https://drive.google.com/file/d/1H_HVyqeSozkp4meohluehww66iE7X6Nx/view?usp=drive_link"
+                    title="apprpriation-short"
+                    width="400"
+                    height="300" />
+                <p>
+                    <b>What the project is:</b><br /><br />
+                    Both films you will see are part of a collection of experimental short films and video-based works
+                    created in Intermediate Video Production, a Cinema and Media Studies (CAMS) course. These projects
+                    feature themes of repetition, rephotography, and storytelling through lens-based media.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>How I came up with the idea: </b> <br /><br />
+                    This short video was inspired by appropriated films, which is a collage film consisting of images
+                    appropriated from film/television/internet. My short film explored my history in the Christian
+                    church as a black, queer child and teenager. It included videos of homophobic pastors, parishioners,
+                    and Kanye West speaking on homophobia in the black community and the hip hop sphere.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>Who I worked with:</b> <br /><br />
+                    Primarily individual projects, but I received feedback from my professor, Claudia Joscowicz and my
+                    peers.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>What was my role:</b> <br /><br />
+                    Director, editor, lead actor, and conceptual designer. I handled cinematography, post-production,
+                    and narrative structuring.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>What I learned: </b> <br /><br />How to convey meaning through visual storytelling, the impact of
+                    editing techniques on perception, and how to refine my artistic voice through iteration.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>What challenged me:</b> <br /><br />
+                    Balancing conceptual depth with accessibility for viewers. Some ideas felt too abstract, so I worked
+                    on making them more engaging without losing artistic intent. I also want to edit these further in
+                    the future to make the narrative tighter and possibly expand on them further.
+                </p>
+                <p>--------------------</p>
+                <p>
+                    <b>How it relates to my major:</b> <br /><br />
+                    It bridges my Media Arts and Sciences background, integrating film theory with interactive and
+                    immersive storytelling techniques.
+                </p>
+                <p>--------------------</p>
+                <button class="close-btn" onclick="closeModal('project2')">Close</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="project3">
+            <div class="modal-content">
+                <h2>Black Film Archive Rhythm Game</h2>
+                <img
+                    src="images/black-film-game-landing-thumbnail.png"
+                    alt="Project 3"
+                    class="project-thumbnail" /><br /><br />
+                <img
+                    src="images/black-film-archive-gameplay.png"
+                    alt="Project 3 Gameplay"
+                    class="project-thumbnail" /><br /><br />
+                <img
+                    src="images/black-film-archive-quiz-thumbnail.png"
+                    alt="Project 3 Quiz"
+                    class="project-thumbnail" /><br /><br />
+
+                <p>
+                    (Work in Progress) A rhythm game, made for ARTS 255, that celebrates Black film history. This is
+                    based on the <a href="blackfilmarchive.com">Black Film Archive</a>
+                </p>
+                <p>
+                    What the project is: <br /><br />
+                    A rhythm-based game that celebrates Black cinema and music, incorporating visuals and audio from
+                    iconic Black films found in the Black Film Archive. Players match beats while the related music
+                    video plays in the background. After some gameplay, players have to correctly answer which black
+                    film or show the song featured in, is referenced to, or is connected to.
+                </p>
+
+                <p>--------------------</p>
+
+                <p>
+                    How I came up with the idea: <br /><br />
+                    I wanted to merge my love for film, music, and interactive design into a game that both entertains
+                    and educates about Black cinematic history. I wanted to emphasize the connection between music and
+                    storytelling. This was inspired by games like Dance Dance Revolution, Friday Night Funkin, and Beat
+                    Saber but with a black, cultural focus.
+                </p>
+
+                <p>--------------------</p>
+
+                <p>
+                    Who I worked with: <br /><br />
+                    I developed this game by myself with some help from reddit forums on proper BPM implementation. As
+                    this is an HTML5 game, I focused on UI/UX design and gameplay mechanics.
+                </p>
+
+                <p>--------------------</p>
+
+                <p>
+                    What was my role: <br /><br />I created the design, the idea, and chose what movies, shows, and
+                    songs to include. Currently, I am debugging rhythm mapping to align visuals and music better.
+                </p>
+
+                <p>--------------------</p>
+
+                <p>
+                    What I learned: <br /><br />
+                    How to design an interactive rhythm game, the importance of rhythm mapping in beat game mechanics,
+                    and what songs have been featured in some of the media I found.
+                </p>
+
+                <p>--------------------</p>
+                <p>
+                    What challenged me: <br /><br />Fair use considerations when incorporating film and music clips,
+                    ease of play, and timing with BPM. Also, enhancing interest through further game mechanics (adding
+                    lives, adding quizzes, etc.).
+                </p>
+
+                <p>--------------------</p>
+                <p>
+                    How it relates to my major: <br /><br />
+                    It combines my background in Media Arts and Sciences, bridging game design, cultural studies, and
+                    interactive storytelling.
+                </p>
+
+                <p>--------------------</p>
+
+                <button class="close-btn" onclick="closeModal('project3')">Close</button>
+            </div>
+            <script src="script.js"></script>
+        </div>
     </body>
 </html>
