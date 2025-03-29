@@ -125,3 +125,93 @@ h1 {
         border-color: transparent;
     }
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; /*space between*/
+    padding: 39px;
+}
+
+.project-item {
+    text-align: center;
+    width: 300px;
+}
+
+.project-thumbnail {
+    width: 100%; /* thumnail fit in parent div */
+    height: auto; /* aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-thumbnail:hover {
+    transform: scale(1.05); /* zoom in on hover */
+}
+
+.modal-overlay {
+    z-index: 999; /*debugging: makes pop up contenet appear over typedTile*/
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    z-index: 1000; /*debugging: makes pop up contenet appear over typedTile*/
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 80%;
+    width: 90vw;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/*CONTACT FORM*/
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: black;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control textarea {
+    resize: vertical;
+    height: 150px;
+}
